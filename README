@@ -1,6 +1,6 @@
 PROJETO IONIC
 
-Iniciar projeto local
+Clonar projeto
 1 - Clonar projeto
     git clone -b develop https://github.com/SUELENBOAS/PROJETO-APP.git
     
@@ -9,8 +9,12 @@ Iniciar projeto local
 3 - Verificar branch correta = "develop"
     git branch
 
-3 - Alterar para branch "develop"
+4 - Alterar para branch "develop"
     git checkout develop
+ 
+5 - Executar projeto http://localhost:8101
+    npm i -g ionic cordova
+    ionic serve
 
 Atualizar branch develop.
 1 -  git add .
