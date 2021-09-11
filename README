@@ -4,7 +4,7 @@ Iniciar projeto local
 1 - Clonar projeto
     git clone https://github.com/SUELENBOAS/PROJETO-APP.git
     
-2 - Acessar pasta "app""
+2 - Acessar pasta "app"
 
 3 - Alterar para branch "develop"
     git checkout develop
@@ -13,3 +13,7 @@ Atualizar branch develop.
 1 -  git add .
 2 -  git commit  -m "COMENTARIO DAS ALTERAÇOES"
 3 -  git push origin develop
+
+Atualizar pasta do projeto 
+1 - Acessar pasta app/
+2 - Executar o comando git pull origin develop
