@@ -2,9 +2,12 @@ PROJETO IONIC
 
 Iniciar projeto local
 1 - Clonar projeto
-    git clone https://github.com/SUELENBOAS/PROJETO-APP.git
+    git clone -b develop https://github.com/SUELENBOAS/PROJETO-APP.git
     
 2 - Acessar pasta "app"
+
+3 - Verificar branch correta = "develop"
+    git branch
 
 3 - Alterar para branch "develop"
     git checkout develop
