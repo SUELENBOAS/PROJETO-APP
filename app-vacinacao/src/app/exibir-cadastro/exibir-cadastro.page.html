@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Exibir usuario </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <div class="content">
+        <h1>{{usuario?.nome}}</h1>
+        <h2>{{usuario?.email}}</h2>
+        <h3>{{usuario?.contato}}</h3>
+        <h4>{{usuario?.emergencia}}</h4>
+        <h5>{{usuario?.logradouro}}</h5>
+        <h6>{{usuario?.numero}}</h6>
+        <h7>{{usuario?.bairro}}</h7>
+        <h8>{{usuario?.cidade}}</h8>
+        <h9>{{usuario?.uf}}</h9>
+        <h10>{{usuario?.alergias}}</h10>
+        <h11>{{usuario?.peso}}</h11>
+        <h12>{{usuario?.altura}}</h12>
+        <h13>{{usuario?.dataNasc}}</h13>
+        <h14>{{usuario?.tpsanguinio}}</h14>
+        <h15>{{usuario?.genero}}</h15>
+
+
+        <!-- <ion-item *ngFor="let pessoa of dados">
+            <ion-icon color="success" name="person-sharp"></ion-icon>
+            <ion-label [routerLink]="['/Exibirusuario?., pessoa.id]">{{pessoa.nome}}</ion-label>
+            <ion-button color="success" (click)="inserir()">Adicionar</ion-button>
+            <ion-icon (click)="remover(usuario?.id)" color="danger" name="close-sharp"></ion-icon>
+        </ion-item> -->
+
+        <ion-button color="success" routerLink="/">Voltar</ion-button>
+    </div>
+
+</ion-content>

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import Iremedio from '../Interfaces/iremedio';
+import Iremedio from '../Interface/iremedio';
 import { DadosRemediosService } from '../dados-remedios.service';
 
 
