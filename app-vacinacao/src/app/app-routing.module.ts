@@ -24,6 +24,10 @@ const routes: Routes = [
     loadChildren: () => import('./cadastro-cliente/cadastro-cliente.module').then( m => m.CadastroClientePageModule)
   },
   {
+    path: 'exibir-cadastro/:id',
+    loadChildren: () => import('./exibir-cadastro/exibir-cadastro-routing.module').then( m => m.ExibirCadastroPageRoutingModule)
+  },
+  {
     path: 'cadastro-remedio',
     loadChildren: () => import('./cadastro-remedio/cadastro-remedio.module').then( m => m.CadastroRemedioPageModule)
   },

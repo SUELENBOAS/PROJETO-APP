@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import Iremedio from './Interfaces/iremedio';
+import Iremedio from '../app/Interface/iremedio';
 import { AlarmePage } from '../app/alarme/alarme.page';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
