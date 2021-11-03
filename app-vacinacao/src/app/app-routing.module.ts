@@ -24,6 +24,10 @@ const routes: Routes = [
     loadChildren: () => import('./cadastro-cliente/cadastro-cliente.module').then( m => m.CadastroClientePageModule)
   },
   {
+    path: 'exibir-cadastro/:id',
+    loadChildren: () => import('./exibir-cadastro/exibir-cadastro-routing.module').then( m => m.ExibirCadastroPageRoutingModule)
+  },
+  {
     path: 'cadastro-remedio',
     loadChildren: () => import('./cadastro-remedio/cadastro-remedio.module').then( m => m.CadastroRemedioPageModule)
   },
@@ -35,9 +39,14 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
     
-  },  {
+  },
+  {
     path: 'busca-posto',
     loadChildren: () => import('./busca-posto/busca-posto.module').then( m => m.BuscaPostoPageModule)
+  },
+  {
+    path: 'meus-remedios/:id',
+    loadChildren: () => import('./meus-remedios/meus-remedios.module').then( m => m.MeusRemediosPageModule)
   },
 
 ];
