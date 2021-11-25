@@ -1,9 +1,27 @@
 <ion-header [translucent]="true">
-    <ion-toolbar light>
-      <ion-title><strong>Buscar por Farmácias</strong> </ion-title>
+  <ion-toolbar>
+     <ion-title>
+      <strong>Buscar por Farmácias</strong> 
+     </ion-title>
     </ion-toolbar>
-  </ion-header>
-<ion-content>
+    <ion-toolbar>
+      <ion-searchbar placeholder="Destino" (ionChange)="buscarEndereco($event)"></ion-searchbar>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list [hidden]="!listaEnderecos.length">
+    <ion-item button *ngFor="let local of listaEnderecos" Lines="full" (click)="tracarRota(local)">
+      {{local.description}}        
+    </ion-item>
+  </ion-list> 
+  <div #map id="map"></div>
+</ion-content>
+
+
+
+<!--
+  <ion-content>
     <div id="local-farmacia" class="container-um">
         <div class="inicio-local">
             <ion-icon name="location-outline"></ion-icon>
@@ -11,10 +29,9 @@
             <br>
             <input type="text" name="search" placeholder="08847-571">
         </div>
-        <img src="../../assets/icon/20181218065336.jpg" class="mapa-img" alt="mapa-img">
+     <img src="../../assets/icon/20181218065336.jpg" class="mapa-img" alt="mapa-img">  
 
     </div>
-
 
     <nav id="barra_navegacao">
         <ul>
@@ -29,3 +46,4 @@
       </ul>
       </nav>
 </ion-content>
+-->
