@@ -1,11 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 .container-um {
     background-image: white;
     text-align: center;
+    color: black;
 }
 
 input {
     border-radius: 10px;
     text-align: center;
+    background-color: white;
+    color:black;
+    margin: 10px;
+    padding: 5px;
+    border-color: #008FEA;
+    border-radius: 12px;
+    text-align: center;
+    font-family: Rubik;
+    
 }
 
 img {
@@ -19,6 +31,11 @@ img {
 p {
     padding: 5px;
 }
+
+label{
+    margin: 2px;
+    font-family: Rubik;
+  }
 
 .inicio-local {
     padding: 10px;
@@ -36,6 +53,18 @@ select {
 .mapa {
     max-width: 700px;
 }
+
+ion-title{
+    font-family: Rubik;
+    background-color: #008FEA;
+    color: white;
+    text-align: center;
+    
+  }
+  
+  ion-toolbar{
+    --background: #008FEA;
+  }
 
 nav {
     margin: 0 auto;
@@ -65,4 +94,20 @@ nav ul li a {
 
 nav ul li ul li {
     min-width: 190px;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+ion-list {
+  width: 95%;
+  position: absolute;
+  top: 120px;
+  z-index: 99;
+  margin-left: 2.5%;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 0 5px 11px 3px rgba(0,0,0, 0.75);
 }
