@@ -6,9 +6,11 @@
 
 <ion-content>
 
-    <div class="content">
-        <h1>{{usuario?.nome}}</h1>
-        <h2>{{usuario?.email}}</h2>
+     <div class="content">
+       
+
+        <h1>{{listarCadastro.nome}}</h1>
+        <!-- <h2>{{usuario?.email}}</h2>
         <h3>{{usuario?.contato}}</h3>
         <h4>{{usuario?.emergencia}}</h4>
         <h5>{{usuario?.logradouro}}</h5>
@@ -21,17 +23,35 @@
         <h12>{{usuario?.altura}}</h12>
         <h13>{{usuario?.dataNasc}}</h13>
         <h14>{{usuario?.tpsanguinio}}</h14>
-        <h15>{{usuario?.genero}}</h15>
+        <h15>{{usuario?.genero}}</h15>  -->
 
 
-        <!-- <ion-item *ngFor="let pessoa of dados">
-            <ion-icon color="success" name="person-sharp"></ion-icon>
-            <ion-label [routerLink]="['/Exibirusuario?., pessoa.id]">{{pessoa.nome}}</ion-label>
-            <ion-button color="success" (click)="inserir()">Adicionar</ion-button>
-            <ion-icon (click)="remover(usuario?.id)" color="danger" name="close-sharp"></ion-icon>
-        </ion-item> -->
+     
+        <ion-button color="primary" (click)="delete()">Deletar</ion-button>
+      
 
-        <ion-button color="success" routerLink="/">Voltar</ion-button>
-    </div>
+     </div> 
 
 </ion-content>
+
+
+<ul>
+    <li>
+        <a href="../cadastro-cliente/"><img src="https://img.icons8.com/ios/50/000000/left3.png" /></a>
+
+    </li>
+
+</ul>
+
+<nav id="barra_navegacao">
+    <ul>
+        <li>
+            <a href="../cadastro-cliente/"><img src="https://img.icons8.com/ios/50/000000/left.png" /></a>
+        </li>
+        <li>
+
+            <a href="../home/"><img src="https://img.icons8.com/ios-filled/30/000000/home.png" /></a>
+        </li>
+
+    </ul>
+</nav>

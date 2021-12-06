@@ -24,11 +24,16 @@
     "@capacitor/haptics": "1.0.3",
     "@capacitor/keyboard": "1.0.3",
     "@capacitor/status-bar": "1.0.3",
+    "@ionic-native/core": "^5.36.0",
     "@ionic-native/geolocation": "^5.36.0",
     "@ionic/angular": "^5.8.5",
     "@ionic/storage-angular": "^3.0.6",
+ 
+    "cap": "^0.2.1",
     "cordova-plugin-geolocation": "^4.1.0",
+    "ionic": "^5.4.16",
     "rxjs": "~6.6.0",
+    "sync": "^0.2.5",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
   },
