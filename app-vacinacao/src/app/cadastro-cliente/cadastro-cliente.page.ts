@@ -2,6 +2,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
+
+
 @Component({
   selector: 'app-cadastro-cliente',
   templateUrl: './cadastro-cliente.page.html',
@@ -35,7 +37,7 @@ export class CadastroCliente {
 
 
   voltar(): void {
-    this.route.navigate(['/exibir-cadastro/' + this.nome])
+    this.route.navigate(['/exibir-cadastro/' ])
 
   }
 
@@ -81,29 +83,6 @@ export class CadastroCliente {
   }
 
 
-  async listarCadastro() {
-    //Fazendo uma requisição do body da nossa API criada
-    this.httpClient.get('http://localhost:4000/cadastro/').subscribe((response) => {
-      //Passando o body (a api) para uma variável
-      this.api = response;
-      //Passando para a variável, a quantidade de elementos dentro da API
-      let qntdApi = Object.keys(this.api).length;
-
-      for (let i = 0; i < qntdApi; i++) {
-        this.listacadastro[i] = this.api[i]
-      }
-
-      this.listacadastro.forEach(element => {
-        console.log(element)
-
-      });
-
-      this.voltar();
-
-    })
-
-
-  }
-
+  
 }
 

@@ -6,42 +6,39 @@
 
 <ion-content>
 
-     <div class="content">
-       
+    <div class="content">
 
-        <h1>{{listarCadastro.nome}}</h1>
-        <!-- <h2>{{usuario?.email}}</h2>
-        <h3>{{usuario?.contato}}</h3>
-        <h4>{{usuario?.emergencia}}</h4>
-        <h5>{{usuario?.logradouro}}</h5>
-        <h6>{{usuario?.numero}}</h6>
-        <h7>{{usuario?.bairro}}</h7>
-        <h8>{{usuario?.cidade}}</h8>
-        <h9>{{usuario?.uf}}</h9>
-        <h10>{{usuario?.alergias}}</h10>
-        <h11>{{usuario?.peso}}</h11>
-        <h12>{{usuario?.altura}}</h12>
-        <h13>{{usuario?.dataNasc}}</h13>
-        <h14>{{usuario?.tpsanguinio}}</h14>
-        <h15>{{usuario?.genero}}</h15>  -->
+        <ion-icon name="cadastro"></ion-icon>
+
+        <p> Nome: {{listaCadastro[0].nome}}</p>
+        <p> e-mail: {{listaCadastro[0].email}} </p>
+        <p> Contato: {{listaCadastro[0].contato}}</p>
+        <p> Contato de emergência: {{listaCadastro[0].emergencia}} </p>
+        <p> Data Nascimento: {{listaCadastro[0].dataNasc}} </p>
+        <p> Endereço: {{listaCadastro[0].logradouro}},
+            {{listaCadastro[0].numero}},
+            {{listaCadastro[0].bairro}},
+            {{listaCadastro[0].cidade}},
+            {{listaCadastro[0].uf}},
+            {{listaCadastro[0].cep}},
+        </p>
+
+        <p> Alergias: {{listaCadastro[0].alergias}} </p>
+        <p> Tipo Sanguineo: {{listaCadastro[0].tpsanguinio}} </p>
+        <p> Peso: {{listaCadastro[0].peso}} </p>
+        <p> Altura: {{listaCadastro[0].altura}} </p>
+
+        nome, email, senha, contato, emergencia, cidade, cep, logradouro, uf, numero, bairro, alergias, peso, altura,
+        dataNasc, tpsanguinio, genero, id
 
 
-     
-        <ion-button color="primary" (click)="delete()">Deletar</ion-button>
-      
 
-     </div> 
+    </div>
 
 </ion-content>
 
 
-<ul>
-    <li>
-        <a href="../cadastro-cliente/"><img src="https://img.icons8.com/ios/50/000000/left3.png" /></a>
 
-    </li>
-
-</ul>
 
 <nav id="barra_navegacao">
     <ul>
