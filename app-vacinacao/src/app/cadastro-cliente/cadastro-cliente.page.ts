@@ -36,12 +36,6 @@ export class CadastroCliente {
   }
 
 
-  voltar(): void {
-    this.route.navigate(['/exibir-cadastro/' ])
-
-  }
-
-
   adicionarcadastro() {
 
 
