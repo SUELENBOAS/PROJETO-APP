@@ -2,13 +2,14 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: 'quem-somos',
+    loadChildren: () => import('./quem-somos/quem-somos.module').then( m => m.QuemSomosPageModule) 
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'quem-somos',
     pathMatch: 'full'
   },
   {
@@ -31,6 +32,29 @@ const routes: Routes = [
     path: 'alarme',
     loadChildren: () => import('./alarme/alarme.module').then( m => m.AlarmePageModule)
   },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    
+  },
+  {
+    path: 'busca-posto',
+    loadChildren: () => import('./busca-posto/busca-posto.module').then( m => m.BuscaPostoPageModule)
+  },
+  {
+    path: 'meus-remedios/:id',
+    loadChildren: () => import('./meus-remedios/meus-remedios.module').then( m => m.MeusRemediosPageModule)
+  },
+  {
+    path: 'meus-alarmes',
+    loadChildren: () => import('./meus-alarmes/meus-alarmes.module').then( m => m.MeusAlarmesPageModule)
+  },
+  {
+    path: 'exibir-cadastro',
+    loadChildren: () => import('./exibir-cadastro/exibir-cadastro-routing.module').then( m => m.ExibirCadastroPageRoutingModule)
+  },
+
+
 ];
 
 @NgModule({

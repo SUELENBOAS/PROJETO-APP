@@ -8,6 +8,8 @@ import { BuscaLocalPageRoutingModule } from './busca-local-routing.module';
 
 import { BuscaLocalPage } from './busca-local.page';
 
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +17,8 @@ import { BuscaLocalPage } from './busca-local.page';
     IonicModule,
     BuscaLocalPageRoutingModule
   ],
-  declarations: [BuscaLocalPage]
+  declarations: [BuscaLocalPage],
+  providers: [Geolocation]
+
 })
-export class BuscaLocalPageModule {}
+export class BuscaLocalPageModule { }

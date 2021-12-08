@@ -1,0 +1,44 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Exibir usuario </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <div>
+
+        <h1> Nome: {{listaCadastro[0].nome}}</h1>
+        <h1> e-mail: {{listaCadastro[0].email}} </h1>
+        <h1> Contato: {{listaCadastro[0].contato}}</h1>
+        <h1> Contato de emergência: {{listaCadastro[0].emergencia}} </h1>
+        <h1> Data Nascimento: {{listaCadastro[0].dataNasc}} </h1>
+        <h1> Endereço: {{listaCadastro[0].logradouro}},
+            {{listaCadastro[0].numero}},
+            {{listaCadastro[0].bairro}},
+            {{listaCadastro[0].cidade}},
+            {{listaCadastro[0].uf}},
+
+        </h1>
+        <h1> Cep: {{listaCadastro[0].cep}},</h1>
+
+        <h1> Alergias: {{listaCadastro[0].alergias}} </h1>
+        <h1> Tipo Sanguineo: {{listaCadastro[0].tpsanguinio}} </h1>
+        <h1> Gênero: {{listaCadastro[0].genero}} </h1>
+
+    </div>
+
+</ion-content>
+
+<nav id="barra_navegacao">
+    <ul>
+        <li>
+            <a href="../cadastro-cliente/"><img src="https://img.icons8.com/ios/50/000000/left.png" /></a>
+        </li>
+        <li>
+
+            <a href="../home/"><img src="https://img.icons8.com/ios-filled/30/000000/home.png" /></a>
+        </li>
+
+    </ul>
+</nav>

@@ -1,9 +1,109 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>cadastro-cliente</ion-title>
-  </ion-toolbar>
+<ion-header [translucent]="true">
+    <ion-toolbar color='primary' layout_gravity="center">
+
+        <ion-avatar>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXuadkjUZgLRloX8Lm8kgbi07xcyWkHSDkag&usqp=CAU">
+        </ion-avatar>
+        <ion-title>
+            <label id="txt"><strong> Meus dados </strong></label>
+        </ion-title>
+
+
+
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-button routerLink="/home">Voltar para home</ion-button>
+
+    <div id="corpocadastro">
+        <ion-item>
+            <div class="form-group">
+
+                <p>
+                    <ion-icon name="key-outline"></ion-icon>
+                    <label id="Login"><strong> Login </strong></label>
+
+                    <ion-input type="text" placeholder="nome" [(ngModel)]="nome"></ion-input>
+                    <ion-input type="email" placeholder="e-mail" [(ngModel)]="email"></ion-input>
+                    <ion-input type="password" placeholder="Senha" id="senha"></ion-input>
+                    <ion-input type="password" placeholder="Confirmar senha" id="confirmar senha"></ion-input>
+
+                </p>
+
+            </div>
+        </ion-item>
+
+        <ion-item>
+            <div>
+                <p>
+                    <ion-icon name="call-outline"></ion-icon>
+                    <label id="cont"><strong> Contato </strong></label>
+                    <ion-input type="number" placeholder="Telefone de contato" [(ngModel)]="contato"></ion-input>
+                    <ion-input type="number" placeholder="Telefone para emergência" [(ngModel)]="emergencia">
+                    </ion-input>
+
+            </div>
+        </ion-item>
+
+        <ion-item>
+            <div>
+                <p></p>
+                <ion-icon name="location-outline"></ion-icon>
+                <label id="cont"><strong> Endereço </strong></label>
+                <div class="form-group">
+                    <ion-input type="text" placeholder="Cidade" [(ngModel)]="cidade"></ion-input>
+                    <ion-input type="text" placeholder="UF" [(ngModel)]="uf"></ion-input>
+                    <ion-input type="number" placeholder="CEP" [(ngModel)]="cep"></ion-input>
+                    <ion-input type="text" placeholder="Logradouro" [(ngModel)]="logradouro"></ion-input>
+                    <ion-input type="text" placeholder="Número" [(ngModel)]="numero"></ion-input>
+                    <ion-input type="text" placeholder="Bairro" [(ngModel)]="bairro"></ion-input>
+                </div>
+            </div>
+        </ion-item>
+
+        <ion-item>
+            <div class="form-group">
+                <p></p>
+                <ion-icon name="clipboard-outline"></ion-icon>
+                <label id="cont"><strong> Ficha Médica</strong></label>
+                <br>
+                <ion-input type="text" placeholder="Alergias" [(ngModel)]="alergias"></ion-input>
+                <ion-input type="text" placeholder="Tipo Sanguineo" [(ngModel)]="tpsanguinio"></ion-input>
+                <ion-input type="number" placeholder="Peso/Kg" [(ngModel)]="peso"></ion-input>
+                <ion-input type="text" placeholder="Gênero" [(ngModel)]="genero"></ion-input>
+                <ion-input type="number" placeholder="Altura/cm" [(ngModel)]="altura"></ion-input>
+                <label id="dataNascimento"> Data de Nascimento </label>
+                <input type="date" name="DataNascimento" [(ngModel)]="dataNasc">
+            </div>
+        </ion-item>
+        <br>
+        <ion-item>
+            <ion-button color="primary" (click)="adicionarcadastro()">Adicionar</ion-button>
+            <ion-button href="../exibir-cadastro/" color="primary">Listar</ion-button>
+                       
+        </ion-item>
+
+    </div>
+    <br><br><br><br>
+
 </ion-content>
+
+<nav id="barra_navegacao">
+    <ul>
+        <li>
+            <a href="../busca-local/"><img src="https://img.icons8.com/ios-filled/30/000000/pharmacy-shop.png" /></a>
+        </li>
+        <li>
+            <a href="../meus-alarmes/"><img src="https://img.icons8.com/external-flatart-icons-solid-flatarticons/30/000000/external-tablets-hospital-healthcare-flatart-icons-solid-flatarticons.png" /></a>
+        </li>
+        <li>
+            <a href="../home/"><img src="https://img.icons8.com/ios-filled/30/000000/home.png" /></a>
+        </li>
+        <li>
+            <a href="../carteira-de-vacinacao/"><img src="https://img.icons8.com/external-wanicon-solid-wanicon/30/000000/external-vaccine-health-checkup-wanicon-solid-wanicon.png" /></a>
+        </li>
+        <li>
+            <a href="../busca-posto/"><img src="https://img.icons8.com/ios-filled/30/000000/hospital-3.png" /></a>
+        </li>
+    </ul>
+</nav>

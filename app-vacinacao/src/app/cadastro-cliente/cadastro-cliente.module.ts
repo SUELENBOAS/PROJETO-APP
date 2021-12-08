@@ -5,9 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { CadastroClientePageRoutingModule } from './cadastro-cliente-routing.module';
-
-import { CadastroClientePage } from './cadastro-cliente.page';
-
+ import { CadastroCliente } from './cadastro-cliente.page';
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +13,6 @@ import { CadastroClientePage } from './cadastro-cliente.page';
     IonicModule,
     CadastroClientePageRoutingModule
   ],
-  declarations: [CadastroClientePage]
+  declarations: [CadastroCliente]
 })
 export class CadastroClientePageModule {}
