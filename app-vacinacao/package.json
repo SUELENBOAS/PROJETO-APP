@@ -27,18 +27,17 @@
     "@capacitor/status-bar": "1.0.3",
     "@ionic-native/core": "^5.36.0",
     "@ionic-native/geolocation": "^5.36.0",
-   "@ionic/storage-angular": "^3.0.6",
- 
-    "cap": "^0.2.1",
-    "cordova-plugin-geolocation": "^4.1.0",
-    "ionic": "^5.4.16",
     "@ionic-native/local-notifications": "^5.36.0",
     "@ionic/angular": "^5.8.5",
+    "@ionic/storage-angular": "^3.0.6",
+    "cap": "^0.2.1",
+    "cordova-plugin-geolocation": "^4.1.0",
     "cordova-plugin-local-notification": "^0.9.0-beta.2",
+    "ionic": "^5.4.16",
     "rxjs": "~6.6.0",
     "sync": "^0.2.5",
     "tslib": "^2.2.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "^0.11.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^12.2.13",
@@ -84,23 +83,8 @@
     "ts-node": "~8.3.0",
     "typescript": "~4.2.4"
   },
-  "description": "An Ionic project",
-  "cordova": {
-    "plugins": {
-      "cordova-plugin-whitelist": {},
-      "cordova-plugin-statusbar": {},
-      "cordova-plugin-device": {},
-      "cordova-plugin-splashscreen": {},
-      "cordova-plugin-ionic-webview": {
-        "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
-      },
-      "cordova-plugin-ionic-keyboard": {},
-      "cordova-plugin-badge": {},
-      "cordova-plugin-local-notification": {}
-    },
-    "platforms": [
-      "android",
-      "browser"
-    ]
-  }
+  "platforms": [
+    "android",
+    "browser"
+  ]
 }

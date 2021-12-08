@@ -1,14 +1,10 @@
 
-// ion-toolbar{
-//     font-style: normal;
-//     font-weight: normal;
-//     font-size: 24px;
-//     line-height: 20px;
-//     text-align: center;
-//     color: black;
-//     width: 100%;
-//     --ion-color-primary:#008FEA;
-//     }
+
+
+ion-toolbar{
+  --background: #008FEA;
+}
+
 ion-title{
     font-family: Rubik;
     background-color: #008FEA;
@@ -17,27 +13,28 @@ ion-title{
     
   }
 
-  ion-button{
-    background-color: whitesmoke;
-    --background: #008FEA;
-    color:white;
-    border-color: #008FEA;
-    --border-radius: 20px;
-    font-family: Rubik;
-    display:inline-flex;
-  }
+  // ion-button{
+  //   background-color: whitesmoke;
+  //   --background: #008FEA;
+  //   color:white;
+  //   border-color: #008FEA;
+  //   --border-radius: 20px;
+  //   font-family: Rubik;
+  //   display:inline-flex;
+  // }
   
-  ion-toolbar{
-    --background: #008FEA;
-  }
+  
 
     ion-content{
         background-color: black;
         color:black;
-        padding: 8px;
         font-family: Rubik;
+        width: auto;
+       padding: 90px;
+       margin-top: 100px;
     }
 
+    
     nav {
         margin: 0 auto;
         background: #008FEA;

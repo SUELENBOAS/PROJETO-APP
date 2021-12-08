@@ -1,3 +1,4 @@
+import { DecimalPipe } from '@angular/common';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
@@ -56,6 +57,7 @@ export class CadastroCliente {
       dataNasc: this.dataNasc,
       tpsanguinio: this.tpsanguinio,
       genero: this.genero,
+      peso: this.peso,
 
     };
 
