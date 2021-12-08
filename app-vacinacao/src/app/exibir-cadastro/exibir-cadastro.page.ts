@@ -14,25 +14,18 @@ import { BrowserModule } from '@angular/platform-browser';
 export class ExibirCadastroPage {
   public rota: ActivatedRoute;
   public id: number;
-  
+
   public options: any = { headers: new HttpHeaders({ 'Content-Type': 'application/json' }) };
   public api;
   public listaCadastro = [];
-  public idCadastro; 
+  public idCadastro;
 
-
-
-  constructor(public BrowserModule:BrowserModule, route: ActivatedRoute, private httpClient: HttpClient,public alertController:AlertController) {
+  constructor(public BrowserModule: BrowserModule, route: ActivatedRoute, private httpClient: HttpClient, public alertController: AlertController) {
     this.rota = route;
     this.listarCadastro();
+  }
 
-   }
-
-
-  
   async listarCadastro() {
-
-   
     //Fazendo uma requisição do body da nossa API criada
     this.httpClient.get('http://localhost:4000/listarcadastro').subscribe((response) => {
       //Passando o body (a api) para uma variável
@@ -49,8 +42,7 @@ export class ExibirCadastroPage {
 
       });
 
-         })
-
+    })
 
   }
 
@@ -58,7 +50,7 @@ export class ExibirCadastroPage {
 
 
 
-  async delete(id:number) {
+  async delete(id: number) {
 
     this.httpClient.delete('http://localhost:4000/delete/cadastro/:id)').subscribe(
       resultado => {
@@ -67,8 +59,6 @@ export class ExibirCadastroPage {
       erro => {
         console.log(erro);
       })
-
-
   }
 
 

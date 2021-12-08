@@ -89,9 +89,13 @@ nav ul li {
 nav ul li a {
     display: block;
     text-decoration: none;
-    padding: 1.3rem;
+    padding: 1.6rem;;
 }
 
 nav ul li ul li {
     min-width: 190px;
 }
+#map {
+    height: 100%;
+    width: 100%;
+  }
