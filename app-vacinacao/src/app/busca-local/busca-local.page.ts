@@ -8,6 +8,7 @@ import { Geolocation } from '@ionic-native/geolocation/ngx';
 })
 export class BuscaLocalPage {
   
+  // VARIAVEL GOOGLE MAPS
   map: google.maps.Map;
   minhaPosicao: google.maps.LatLng;
 
@@ -25,19 +26,21 @@ export class BuscaLocalPage {
     this.exibirMapa(); 
   }
 
+  // Metodo para carregar a pagina do Google Maps
   exibirMapa() {
-    const posicao = new google.maps.LatLng(-23.533773, -46.625290);
+    const posicao = new google.maps.LatLng(-23.6138507, -46.5100014);
     const opcoes = {
       center: posicao,
-      zoom: 1,
-      disableDefaultUI: true
+      zoom: 15, // zoom para carregar o mapa
+      disableDefaultUI: false // habilitar ou desabilitar recurso de satelite, zoom
     };
 
     this.map = new google.maps.Map(this.mapRef.nativeElement, opcoes);
 
     this.buscarPosicao();
   }
-
+  
+   // Metodo para buscar posicao atual por gps
   buscarPosicao() {
     this.geolocation.getCurrentPosition().then((resp) => {
       // resp.coords.latitude
@@ -51,7 +54,7 @@ export class BuscaLocalPage {
       console.log('Error getting location', error);  
     });
   }
-
+  // Metodo para encontrar localizaçao atual do usuario por gps
   irParaMinhaPosicao()  {
     this.map.setCenter(this.minhaPosicao);
     this.map.setZoom(15);
@@ -64,7 +67,7 @@ export class BuscaLocalPage {
     });
   }
 
-
+  // Metodo para buscar endereço
   buscarEndereco(eventoCampoBusca: any) {
     const busca = eventoCampoBusca.target.value as string;
 
@@ -80,7 +83,7 @@ export class BuscaLocalPage {
       }
     });
   }
-
+  // Traçar rotas a partir da localizaçao atual do usuario
   public tracarRota(Local: google.maps.places.AutocompletePrediction) {
     this.listaEnderecos = [];
 

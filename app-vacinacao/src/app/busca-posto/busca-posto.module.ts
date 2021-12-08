@@ -8,6 +8,8 @@ import { BuscaPostoPageRoutingModule } from './busca-posto-routing.module';
 
 import { BuscaPostoPage } from './busca-posto.page';
 
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +17,8 @@ import { BuscaPostoPage } from './busca-posto.page';
     IonicModule,
     BuscaPostoPageRoutingModule
   ],
-  declarations: [BuscaPostoPage]
+  declarations: [BuscaPostoPage],
+  providers: [Geolocation]
+
 })
 export class BuscaPostoPageModule {}
