@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { MeusAlarmesPage } from '../meus-alarmes/meus-alarmes.page';
+
 import { LocalNotifications } from '@ionic-native/local-notifications/ngx';
 
 
@@ -19,7 +19,7 @@ export class AlarmePage {
   public quantidade_pilulas = 0;
 
 
-  constructor(private httpClient: HttpClient, private localNotifications: LocalNotifications, public MeusAlarmesPage:MeusAlarmesPage) {
+  constructor(private httpClient: HttpClient, private localNotifications: LocalNotifications) {
   }
 
   async notificarLembrete() {

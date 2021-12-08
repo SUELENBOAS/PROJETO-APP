@@ -34,6 +34,29 @@ class MedController {
         })
     }
 
+    removerMedicamento(request, response) {
+        const id = request.params.id
+
+        database.where({ id: id }).del().table("medicamentos").then(data => {
+            response.json({ message: "Medicamento removido com sucesso" })
+
+        }).catch(error => {
+            console.log(error)
+        })
+    }
+
+    atualizarMedicamento(request, response) {
+        const id = request.params.id
+        const {nomeMedicamento, intervaloH, qntdPilula, liquido} = request.body
+
+        database.where({id:id}).update({nomeMedicamento:nomeMedicamento, intervaloH:intervaloH, qntdPilula:qntdPilula,liquido:liquido}).table("medicamentos").then(data => {
+            response.json({ message: "Medicamento atualizado com sucesso" })
+        }).catch(error => {
+            response.json(error)
+        })
+    }
+
+
 
     novocadastro(request, response) {
         const { nome, email, senha, contato, emergencia, cidade, cep, logradouro, uf, numero, bairro, alergias, peso, altura,
