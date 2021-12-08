@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { ExibirCadastroPage } from './exibir-cadastro.page';
+import{ExibirCadastroPage} from './exibir-cadastro.page'
 
 describe('ExibirCadastroPage', () => {
   let component: ExibirCadastroPage;

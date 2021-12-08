@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  
   {
     path: 'quem-somos',
     loadChildren: () => import('./quem-somos/quem-somos.module').then( m => m.QuemSomosPageModule) 
@@ -24,10 +25,6 @@ const routes: Routes = [
     loadChildren: () => import('./cadastro-cliente/cadastro-cliente.module').then( m => m.CadastroClientePageModule)
   },
   {
-    path: 'exibir-cadastro/:id',
-    loadChildren: () => import('./exibir-cadastro/exibir-cadastro-routing.module').then( m => m.ExibirCadastroPageRoutingModule)
-  },
-  {
     path: 'cadastro-remedio',
     loadChildren: () => import('./cadastro-remedio/cadastro-remedio.module').then( m => m.CadastroRemedioPageModule)
   },
@@ -48,6 +45,15 @@ const routes: Routes = [
     path: 'meus-remedios/:id',
     loadChildren: () => import('./meus-remedios/meus-remedios.module').then( m => m.MeusRemediosPageModule)
   },
+  {
+    path: 'meus-alarmes',
+    loadChildren: () => import('./meus-alarmes/meus-alarmes.module').then( m => m.MeusAlarmesPageModule)
+  },
+  {
+    path: 'exibir-cadastro',
+    loadChildren: () => import('./exibir-cadastro/exibir-cadastro-routing.module').then( m => m.ExibirCadastroPageRoutingModule)
+  },
+
 
 ];
 

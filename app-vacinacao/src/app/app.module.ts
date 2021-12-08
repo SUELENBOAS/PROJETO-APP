@@ -11,12 +11,13 @@ import { IonicStorageModule } from '@ionic/storage-angular';
 import { DadosRemediosService } from './dados-remedios.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CadastroService } from './cadastro.service';
+import { LocalNotifications } from '@ionic-native/local-notifications/ngx';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, IonicStorageModule.forRoot()],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, DadosRemediosService, CadastroService ],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, DadosRemediosService, CadastroService,LocalNotifications ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { CadastroClientePage } from './cadastro-cliente.page';
+import { CadastroCliente } from './cadastro-cliente.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: CadastroClientePage
+    component: CadastroCliente
   }
 ];
 
